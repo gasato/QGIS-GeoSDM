@@ -1,0 +1,189 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="qgis:heatmapkerneldensityestimation_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:heatmapkerneldensityestimation"/>
+      <Option name="component_description" type="QString" value="Mapa de calor (Estimación de Densidad de Núcleo)"/>
+      <Option name="component_pos_x" type="double" value="192"/>
+      <Option name="component_pos_y" type="double" value="422"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:heatmapkerneldensityestimation_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="Lineament Heat Map" type="Map">
+          <Option name="child_id" type="QString" value="qgis:heatmapkerneldensityestimation_1"/>
+          <Option name="component_description" type="QString" value="Lineament Heat Map"/>
+          <Option name="component_pos_x" type="double" value="510"/>
+          <Option name="component_pos_y" type="double" value="541"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="Lineament Heat Map"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="DECAY" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="qgis:pointsalonglines_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="KERNEL" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_VALUE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="PIXEL_SIZE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="100"/>
+          </Option>
+        </Option>
+        <Option name="RADIUS" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="radio"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="RADIUS_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="WEIGHT_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:pointsalonglines_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:pointsalonglines"/>
+      <Option name="component_description" type="QString" value="Puntos a lo largo de geometría"/>
+      <Option name="component_pos_x" type="double" value="190"/>
+      <Option name="component_pos_y" type="double" value="266"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:pointsalonglines_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="DISTANCE" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="distancebetweenpoints"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="END_OFFSET" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="lineament"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="START_OFFSET" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" type="QString" value="Lineament Analysis"/>
+  <Option name="model_name" type="QString" value="Lineament Density Heat Map"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="distancebetweenpoints" type="Map">
+      <Option name="data_type" type="int" value="1"/>
+      <Option name="default" type="QString" value="100"/>
+      <Option name="default_unit" type="int" value="9"/>
+      <Option name="description" type="QString" value="Distance between points"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="max" type="double" value="1000"/>
+      <Option name="metadata"/>
+      <Option name="min" type="double" value="10"/>
+      <Option name="name" type="QString" value="distancebetweenpoints"/>
+      <Option name="parameter_type" type="QString" value="distance"/>
+      <Option name="parent" type="QString" value="lineament"/>
+    </Option>
+    <Option name="lineament" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="1"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Lineament"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="lineament"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="qgis:heatmapkerneldensityestimation_1:Lineament Heat Map" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Lineament Heat Map"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="qgis:heatmapkerneldensityestimation_1:Lineament Heat Map"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="true"/>
+    </Option>
+    <Option name="radio" type="Map">
+      <Option name="data_type" type="int" value="1"/>
+      <Option name="default" type="QString" value="1000"/>
+      <Option name="description" type="QString" value="Radio"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="max" type="double" value="100000"/>
+      <Option name="metadata"/>
+      <Option name="min" type="double" value="10"/>
+      <Option name="name" type="QString" value="radio"/>
+      <Option name="parameter_type" type="QString" value="number"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="distancebetweenpoints" type="Map">
+      <Option name="component_description" type="QString" value="distancebetweenpoints"/>
+      <Option name="component_pos_x" type="double" value="486"/>
+      <Option name="component_pos_y" type="double" value="80"/>
+      <Option name="name" type="QString" value="distancebetweenpoints"/>
+    </Option>
+    <Option name="lineament" type="Map">
+      <Option name="component_description" type="QString" value="lineament"/>
+      <Option name="component_pos_x" type="double" value="185"/>
+      <Option name="component_pos_y" type="double" value="82"/>
+      <Option name="name" type="QString" value="lineament"/>
+    </Option>
+    <Option name="radio" type="Map">
+      <Option name="component_description" type="QString" value="radio"/>
+      <Option name="component_pos_x" type="double" value="497"/>
+      <Option name="component_pos_y" type="double" value="269"/>
+      <Option name="name" type="QString" value="radio"/>
+    </Option>
+  </Option>
+</Option>
