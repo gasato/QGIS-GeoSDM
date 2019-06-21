@@ -14,10 +14,20 @@
         <Option name="Lineament Heat Map" type="Map">
           <Option name="child_id" type="QString" value="qgis:heatmapkerneldensityestimation_1"/>
           <Option name="component_description" type="QString" value="Lineament Heat Map"/>
-          <Option name="component_pos_x" type="double" value="510"/>
-          <Option name="component_pos_y" type="double" value="541"/>
-          <Option name="default_value" type="invalid"/>
-          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="component_pos_x" type="double" value="342"/>
+          <Option name="component_pos_y" type="double" value="499"/>
+          <Option name="default_value" type="Map">
+            <Option name="class" type="QString" value="QgsProcessingOutputLayerDefinition"/>
+            <Option name="create_options" type="Map">
+              <Option name="fileEncoding" type="QString" value="System"/>
+            </Option>
+            <Option name="sink" type="Map">
+              <Option name="active" type="bool" value="true"/>
+              <Option name="type" type="int" value="1"/>
+              <Option name="val" type="QString" value=""/>
+            </Option>
+          </Option>
+          <Option name="mandatory" type="bool" value="true"/>
           <Option name="name" type="QString" value="Lineament Heat Map"/>
           <Option name="output_name" type="QString" value="OUTPUT"/>
         </Option>
@@ -116,7 +126,16 @@
       </Option>
     </Option>
   </Option>
-  <Option name="help"/>
+  <Option name="help" type="Map">
+    <Option name="ALG_CREATOR" type="QString" value="Carlos Gabriel Asato"/>
+    <Option name="ALG_DESC" type="QString" value="Lineament density map based on extracting points along each lineament and using them for producing a density map by Heat Map algorithm"/>
+    <Option name="ALG_HELP_CREATOR" type="QString" value=""/>
+    <Option name="SHORT_DESCRIPTION" type="QString" value=""/>
+    <Option name="distancebetweenpoints" type="QString" value="Distance between points along each lineament."/>
+    <Option name="lineament" type="QString" value="Lineament layer."/>
+    <Option name="qgis:heatmapkerneldensityestimation_1:Lineament Heat Map" type="QString" value=""/>
+    <Option name="radio" type="QString" value="Radio of search "/>
+  </Option>
   <Option name="model_group" type="QString" value="Lineament Analysis"/>
   <Option name="model_name" type="QString" value="Lineament Density Heat Map"/>
   <Option name="parameterDefinitions" type="Map">
@@ -146,7 +165,7 @@
     </Option>
     <Option name="qgis:heatmapkerneldensityestimation_1:Lineament Heat Map" type="Map">
       <Option name="create_by_default" type="bool" value="true"/>
-      <Option name="default" type="invalid"/>
+      <Option name="default"/>
       <Option name="description" type="QString" value="Lineament Heat Map"/>
       <Option name="flags" type="int" value="0"/>
       <Option name="metadata"/>
