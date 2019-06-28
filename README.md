@@ -4,9 +4,9 @@ QGIS-GeoSDM Group of QGIS 3 processing scripts for geosciences - Inspired on Gar
 Please, improve!!!
 
 ## How to add python processing scripts to QGIS 3
-Open QGIS Toolbox
-Click on Python
-Select "Add script to the toolbox"
-Look for the script in the file explorer window
-Select and open it
-Voila
+1. Open QGIS Toolbox
+2. Click on Python
+3. Select "Add script to the toolbox"
+4. Look for the script in the file explorer window
+5. Select and open it
+6. Voila
