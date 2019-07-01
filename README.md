@@ -1,7 +1,7 @@
 # QGIS-GeoSDM
 QGIS-GeoSDM Group of QGIS 3 processing scripts for geosciences - Inspired on Gary Raines and others SDM.
 
-Please, improve!!!
+Please, help to improve!!!
 
 ## How to add python processing scripts to QGIS 3
 1. Open QGIS Toolbox
