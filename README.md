@@ -10,3 +10,7 @@ Please, help to improve!!!
 4. Look for the script in the file explorer window
 5. Select and open it
 6. Voila
+
+## Observations
+
+Scripts proved with same dimensions rasters (cell size, with and heigth) and SRC
