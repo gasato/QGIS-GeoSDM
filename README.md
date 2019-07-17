@@ -13,4 +13,4 @@ Please, help to improve!!!
 
 ## Observations
 
-Scripts proved with same dimensions rasters (cell size, with and heigth) and SRC
+Scripts proved with same rasters dimensions (cell size, with and heigth) and SRC
