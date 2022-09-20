@@ -175,7 +175,7 @@ class lineamentParamCalc(QgsProcessingAlgorithm):
  
     
         f = 'CASE\n'
-        f = f + 'when ((0 <= azimuth) and (azimutg <= 22.5)) or ((157.5 <= azimuth) and ( azimuth <= 202.5)) or ((337.5 <= azimuth) and (azimuth <= 360)) then \'N-S\'\n' 
+        f = f + 'when ((0 <= azimuth) and (azimuth <= 22.5)) or ((157.5 <= azimuth) and ( azimuth <= 202.5)) or ((337.5 <= azimuth) and (azimuth <= 360)) then \'N-S\'\n' 
         f = f + 'when ((22.5 <= azimuth) and ( azimuth <= 67.5)) or ((202.5 <= azimuth) and (azimuth <= 247.5)) then \'NE-SW\'\n'
         f = f + 'when ((67.5 <= azimuth) and ( azimuth <= 112.5)) or ((247.5 <= azimuth) and (azimuth <= 292.5)) then \'E-W\'\n' 
         f = f + 'when ((112.5 <= azimuth) and ( azimuth <= 157.5)) or ((292.5 <= azimuth) and ( azimuth <= 337.5)) then \'NW-SE\'\n' 
