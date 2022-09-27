@@ -14,3 +14,7 @@ Please, help to improve!!!
 ## Observations
 
 Scripts were proved with same rasters dimensions (cell size, width and height) and SRC
+
+# QGIS-Geo Tools
+
+Several geological analysis tools also are included in this folder
